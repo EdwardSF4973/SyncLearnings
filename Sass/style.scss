@@ -1,0 +1,192 @@
+// Variables
+$primary-color: #eae4d3; // Light yellow
+$secondary-color: #b5c99a; // Light green
+$text-color:rgb(223, 130, 223);
+$heading-color: #2d2d2d;
+$font-stack: 'Arial', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $primary-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      display: inline;
+      margin: 0 15px;
+      
+      a {
+        text-decoration: none;
+        color: $heading-color;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: darken($secondary-color, 20%);
+        }
+      }
+    }
+  }
+}
+
+// Section Styling
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: $heading-color;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  background: linear-gradient(to right, $secondary-color, lighten($secondary-color, 15%));
+  padding: 100px 20px;
+  text-align: center;
+
+  .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid $heading-color;
+  }
+
+  .hero-text {
+    h1 {
+      font-size: 36px;
+      color: $heading-color;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: darken($secondary-color, 25%);
+    }
+  }
+}
+
+// About Section
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    background: lighten($secondary-color, 10%);
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+    text-align: left;
+    border-left: 5px solid darken($secondary-color, 15%);
+  }
+}
+
+// Education
+.education-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .edu-item {
+    background: lighten($secondary-color, 10%);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    width: 300px;
+  }
+}
+
+// Skills
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 18px;
+      margin: 10px;
+      
+      i {
+        font-size: 24px;
+        margin-right: 10px;
+        color: darken($secondary-color, 20%);
+      }
+    }
+  }
+}
+
+// Projects
+#projects ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    background: lighten($secondary-color, 10%);
+    padding: 15px;
+    margin: 10px;
+    border-left: 4px solid darken($secondary-color, 15%);
+  }
+}
+
+// Contact Form
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-info {
+    background: lighten($secondary-color, 10%);
+    padding: 15px;
+    border-radius: 8px;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid $heading-color;
+      border-radius: 5px;
+    }
+
+    button {
+      background: darken($secondary-color, 15%);
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($secondary-color, 25%);
+      }
+    }
+  }
+}

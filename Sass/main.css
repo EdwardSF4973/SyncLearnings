@@ -1,0 +1,21 @@
+body {
+  background-color: lightyellow;
+  color: rgb(223, 130, 223);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #64e764;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+}/*# sourceMappingURL=main.css.map */
