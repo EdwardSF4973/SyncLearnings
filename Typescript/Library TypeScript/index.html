@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Library</title>
+</head>
+<body>
+    <div id="box">
+        <div class="sign">
+            <h1 onclick="signIn()" id="signInButton">Sign In</h1>
+            <h1 onclick="signUp()" id="signUpButton">Sign Up</h1>
+        </div>
+
+        <div id="signUp">
+            <form action="" onsubmit="signUpSubmit(event)">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="PassWord" required>
+                <input type="password" id="cpassword" placeholder="Confirmn PassWord" required>
+                
+
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                
+                <input type="submit" value="Submit" class="sub">
+            </form>
+
+        </div>
+
+        <div id="signIn">
+            <form action="" onsubmit="signInSubmit(event)">
+                <input type="email" id="email1" placeholder="Email" required>
+                <input type="password" id="password2" placeholder="PassWord" required>
+                <input type="submit" value="submit" class="sub">
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="menu">
+        <ol>
+            <li onclick="home()">Home</li>
+            <li onclick="bookDetails()">Book Details</li>
+            <li onclick="borrowBook()">Borrow Book</li>
+            <li onclick="borrowHistory()">Borrow History</li>
+            <li onclick="topup()">Top Up</li>
+            <li onclick="returnBook()">Return Books<li>
+            <li onclick="logout()">Log Out</li>
+        </ol>
+    </div>
+
+    <div id="homepage">
+        <h1 id="welcome"></h1>
+    </div>
+
+    <div id="bookDetailsPage">
+        <span id="bookAddButton"><button onclick="addBook()" id="addBook">Add Book</button></span>
+        <table id="bookDetailsTable">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Available</th>
+                <th>Action</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="borrorBookPage">
+        <table id="borrowBookTable">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Available</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="borrorHistoryPage">
+        <table id="borrowHistoryTable">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Available</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="returnPage">
+        <table id="returnTable">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Available</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="topUpPage">
+        <h1 id="currentBalance"></h1>
+        <span id="amountInput"><input type="number" placeholder="Amount" id="amount" required>
+        <button onclick="deposit()" id="deposit">Deposit</button></span>
+    </div>
+
+    <div id="addEditBookForm">
+        <h1>Add/Edit Book Details</h1>
+        <input type="text" id="bookName" placeholder="Book Name">
+        <input type="text" id="authorName" placeholder="Author Name">
+        <input type="text" id="availability" placeholder="Available or Not">
+        <button onclick="addEditBook()">Submit</button>
+    </div>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

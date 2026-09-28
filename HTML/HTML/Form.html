@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <table>
+        <th>Login Form</th>
+    </table>
+
+    <p>Name : <input type="text" placeholder="FirstName"> <input type="text" placeholder="LastName"> </p>
+    <p>Email : <input type="email" placeholder="Email"></p>
+    <p>Phone Number : <input type="number" maxlength="10" placeholder="Phone Number"></p>
+    <p>Password <input type="password" placeholder="Password" maxlength="25"></p>
+
+    <span name="genders" id="genders">
+        <p>Gender</p>
+        <input type="radio" name="Gender" value="default" id="default" checked><label for="default">Default</label><br>
+        <input type="radio" name="Gender" value="male" id="male"><label for="male">Male</label><br>
+        <input type="radio" name="Gender" value="female" id="female"><label for="female">Female</label><br>
+        <input type="radio" name="Gender" value="transgender" id="transgender"><label
+            for="transgender">TransGender</label>
+    </span>
+
+    <p>Address</p>
+    <textarea name="address" id="address" cols="40" rows="10" placeholder="enter your address"></textarea><br><br>
+
+    <span name="dateofbirth" id="dateofbirth">
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob">
+    </span><br>
+    <br>
+    <span name="time">
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+    </span><br>
+
+    <span name="languages" id="languages">
+        <p>Languages</p>
+        <input type="checkbox" name="languages[]" value="english">English<br>
+        <input type="checkbox" name="languages[]" value="tamil">Tamil<br>
+        <input type="checkbox" name="languages[]" value="malayalam">Malayalam
+    </span>
+
+    <span>
+        <p>Select the fieldof intrest</p>
+        <select name="intrest" id="intrest">
+            <option value="music">Music</option>
+            <option value="cycle">Cyclic</option>
+            <option value="badminton">Badminton</option>
+        </select>
+    </span>
+
+    <span>
+        <p>Upload the Photo</p>
+        <input type="file" name="photo">
+    </span><br>
+
+    <input type="submit">
+    <input type="reset">
+
+
+</body>
+
+</html>
